@@ -8,7 +8,7 @@ const Header = () => {
         <div className="row">
           <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="img/logo.png" alt="" /></a>
                     </div>
                 </div>
           <div className="col-lg-7">
