@@ -6,11 +6,11 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="row">
-          <div className="col-lg-3">
-            <div className="header__logo">
-              <a href="./index.html"><img src="img/logo.png" alt="" /></a>
-            </div>
-          </div>
+          <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
           <div className="col-lg-7">
             <nav className="header__menu">
               <ul>
