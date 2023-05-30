@@ -1,7 +1,7 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import RecipeDetail from './RecipeDetail';
-import recipesData from '../../data/recipesData'; // Dữ liệu công thức (có thể lấy từ API)
+import React from "react";
+import { useParams } from "react-router-dom";
+import RecipeDetail from "./RecipeDetail";
+import recipesData from "../../data/recipesData"; // Dữ liệu công thức (có thể lấy từ API)
 
 const RecipePage = () => {
   const { id } = useParams();

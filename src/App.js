@@ -1,44 +1,45 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Recipe from './pages/Recipe';
-import RecipePage from './pages/RecipePage';
-import RecipeDetail from './components/recipeComponents/RecipeDetail';
-import LoginPage from './pages/LoginPage';
-import RegisterPage from './pages/RegisterPage';
-import { AuthProvider } from './AuthContext';
-import ShoppingList from './components/shoppingList/ShoppingList';
-import Humberger from './components/Humberger';
-import Hero from './components/Hero';
-import Categories from './components/Categories';
-import Featured from './components/Featured';
-import Banner from './components/Banner';
-import Lasted from './components/Lasted';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Recipe from "./pages/Recipe";
+import RecipePage from "./pages/RecipePage";
+import RecipeDetail from "./components/recipeComponents/RecipeDetail";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import { AuthProvider } from "./AuthContext";
+import ShoppingList from "./components/shoppingList/ShoppingList";
+import Humberger from "./components/Humberger";
+import Categories from "./components/Categories";
+import ShopGrid from "./components/shop/ShopGrid";
+import Hero from "./components/Hero";
+import ShopDetail from "./components/shop/ShopDetail";
+import ShopingCart from "./components/shop/ShopingCart";
+import Contact from "./components/Contact";
+import CheckOut from "./components/shop/CheckOut";
+
+
+
 
 const App = () => {
   return (
     <Router>
       <AuthProvider>
-      <div>
-        <Humberger />
-        <Header />
-        <Hero />
-        <Categories />
-        <Featured />
-        <Banner />
-        <Lasted />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/recipe" element={<Recipe />} />
-          <Route path="/recipe/:id" element={<RecipePage />} />
-          <Route path="/recipe/:id" element={<RecipeDetail />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/shopping-list" element={<ShoppingList />} />
+        <div>
+          <Humberger />
+          <Header />
+          <Hero />
+          <Categories />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/shop-grid" element={<ShopGrid />} />
+            <Route path="/shop-details" element={<ShopDetail />} />
+            <Route path="/shoping-cart" element={<ShopingCart />} />
+            <Route path="/checkout" element={<CheckOut />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
-        <Footer />
+          <Footer />
         </div>
       </AuthProvider>
     </Router>
