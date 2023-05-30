@@ -3576,3 +3576,27 @@ ol {
     }
     
 }
+
+#signup{
+    border: transparent;
+    outline: none;
+}
+
+#login{
+    background:none;
+    color: rgb(255, 255, 255);
+    border: transparent;
+    outline: none;
+}
+.opaque .navbar-default .navbar-nav  li  #login {
+    color: #151515;
+    background: none;
+}
+@media screen and (min-width: 0) and (max-width: 1024px){
+    #login{
+        background: none;
+        color: #000;
+        border: transparent;
+        outline: none;
+    }
+}
