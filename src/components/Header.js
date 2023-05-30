@@ -38,7 +38,7 @@ onCloseModalclose = () => {
           <div className="row">
             <div class="col-lg-3">
                       <div class="header__logo">
-                          <a href="./index.html"><img src="img/logo.png" alt="" /></a>
+                          <a href="./index.html"><img src="https://media.discordapp.net/attachments/1095029790190342256/1110215396671357000/nicecook-xanh.png?width=477&height=200" alt="" /></a>
                       </div>
                   </div>
             <div className="col-lg-7">
